@@ -19,6 +19,7 @@ async function copyText(value, success) {
   catch { showToast('Clipboard unavailable. Select and copy the text manually.'); }
 }
 document.getElementById('copy-json').addEventListener('click', () => copyText(document.getElementById('json-code').textContent, 'JSON copied to clipboard.'));
+document.getElementById('copy-email').addEventListener('click', () => copyText('connect.prolay@gmail.com', 'Email copied to clipboard.'));
 
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.getElementById('site-nav');

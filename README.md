@@ -44,4 +44,4 @@ The visual work in this portfolio was generated using ChatGPT / OpenAI Images. N
 
 ## Usage note
 
-This portfolio and its artwork were created specifically for Prolay Kumar Panda's professional application. Before sharing the site, replace the visible TODOs for Prolay’s email address, LinkedIn URL and résumé URL or file. The HeartStamp application address is a separate optional link.
+This portfolio and its artwork were created specifically for Prolay Kumar Panda's professional application.
