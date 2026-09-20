@@ -3,8 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Prolay Panda — GenAI Visual Systems</title>
+  <title>Prolay Kumar Panda — GenAI Prompt Engineer & Visual Systems Designer</title>
   <meta name="description" content="GenAI prompt engineering portfolio: original visual systems, production-ready JSON prompts, and emotionally intelligent greeting-card concepts." />
+  <link rel="canonical" href="https://genai-image-prompt-portfolio.vercel.app/" />
+  <meta name="theme-color" content="#f3f0e9" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Prolay Kumar Panda — GenAI Visual Systems" />
+  <meta property="og:description" content="Original visual systems, controlled variations and a documented GenAI prompt engineering process." />
+  <meta property="og:url" content="https://genai-image-prompt-portfolio.vercel.app/" />
+  <meta property="og:image" content="https://genai-image-prompt-portfolio.vercel.app/assets/social-preview.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Prolay Kumar Panda portfolio title beside colorful Chaotic Birthday artwork" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Prolay Kumar Panda — GenAI Visual Systems" />
+  <meta name="twitter:description" content="Original visual systems and documented prompt engineering." />
+  <meta name="twitter:image" content="https://genai-image-prompt-portfolio.vercel.app/assets/social-preview.jpg" />
+  <link rel="preload" href="assets/01-chaotic-birthday.webp" as="image" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","name":"Prolay Kumar Panda","jobTitle":"GenAI Prompt Engineer & Visual Systems Designer","url":"https://genai-image-prompt-portfolio.vercel.app/"},{"@type":"CreativeWork","name":"GenAI Visual Systems Portfolio","creator":{"@type":"Person","name":"Prolay Kumar Panda"},"url":"https://genai-image-prompt-portfolio.vercel.app/","description":"Self-directed visual systems and prompt engineering portfolio using ChatGPT / OpenAI Images."}]}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
@@ -12,27 +28,51 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#top">Skip to content</a>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <div class="cursor-orb" aria-hidden="true"></div>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Back to top">PP<span>✦</span></a>
-    <nav aria-label="Portfolio navigation">
-      <a href="#research">Research</a><a href="#cards">Card concepts</a><a href="#systems">Systems</a><a href="#process">Process</a>
+    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>
+    <nav id="site-nav" aria-label="Portfolio navigation">
+      <a href="#featured">Featured case</a><a href="#research">Research</a><a href="#cards">Card concepts</a><a href="#systems">Systems</a><a href="#process">Process</a>
     </nav>
-    <a class="mini-cta" href="#contact">Let’s talk ↗</a>
+    <div class="header-actions"><button id="review-toggle" type="button" aria-pressed="false">Quick Review</button><a class="mini-cta" href="#contact">Contact ↗</a></div>
   </header>
 
+  <div class="view-bar" role="group" aria-label="Portfolio view"><button id="creative-view" type="button" aria-pressed="true">Creative View</button><button id="technical-view" type="button" aria-pressed="false">Technical View</button></div>
+  <div class="section-progress" aria-hidden="true"><span id="progress-fill"></span></div>
   <main id="top">
     <section class="hero">
       <div class="hero-copy reveal">
-        <p class="eyebrow">GenAI prompt engineer · visual style systems</p>
+        <p class="eyebrow hero-name">Prolay Kumar Panda</p>
+        <p class="hero-role">GenAI Prompt Engineer &amp; Visual Systems Designer</p>
         <h1>Art direction<br>with a <em>pulse.</em></h1>
         <p class="lead">I build emotionally precise, reusable visual languages with OpenAI Images—then turn them into structured prompt systems that can ship at scale.</p>
-        <div class="hero-meta"><span>04 research lenses</span><span>03 original systems</span><span>17 finished studies</span></div>
+        <div class="hero-meta"><span><b>3</b> reusable style systems</span><span><b>6</b> controlled variations</span><span><b>2</b> documented refinements</span><span><b>1</b> production-ready JSON framework</span></div>
+        <div class="hero-actions"><a href="#featured">View featured case study</a><a href="downloads/portfolio.pdf" download>Download portfolio PDF</a></div>
       </div>
       <figure class="hero-art reveal">
-        <img src="assets/01-chaotic-birthday.png" alt="Surreal maximalist birthday cake exploding with confetti and colorful ribbons" />
-        <figcaption><b>Glitch Garden Letters</b><span>Watercolor × risograph × digital glitch</span></figcaption>
+        <button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/01-chaotic-birthday.webp" alt="Surreal maximalist birthday cake exploding with confetti and colorful ribbons" width="1122" height="1402" decoding="async" fetchpriority="high" srcset="assets/01-chaotic-birthday-560.webp 560w, assets/01-chaotic-birthday.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button>
+        <figcaption><b>Chaotic Birthday</b><span>Glitch Garden Letters</span></figcaption>
       </figure>
+    </section>
+
+
+    <section id="featured" class="section featured-section" aria-labelledby="featured-title">
+      <div class="section-head"><p class="kicker">Featured case study</p><h2 id="featured-title">Chaotic Birthday<br>Visual System</h2><p>A controlled maximalist card concept built from a reusable visual grammar.</p></div>
+      <div class="case-overview">
+        <div><h3>Brief & audience</h3><p>Create a birthday card concept for a close friend who appreciates playful, visually loud humor. The work is a self-directed portfolio study, not a client commission.</p></div>
+        <div><h3>Emotional job</h3><p>Make the recipient feel vividly celebrated while leaving clear space for a personal message.</p></div>
+        <div><h3>Research signal</h3><p>The research scan suggested tactile texture and surreal playfulness. I translated that direction into watercolor blooms, risograph color and restrained digital interference.</p></div>
+      </div>
+      <div class="case-sequence">
+        <figure><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/before-birthday.webp" alt="Initial birthday generation with many competing objects and little message space" width="1122" height="1402" loading="lazy" decoding="async" srcset="assets/before-birthday-560.webp 560w, assets/before-birthday.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button><figcaption>Initial generation — crowded composition</figcaption></figure>
+        <div class="case-notes"><h3>Diagnosis → revised prompt</h3><p>The initial generation spread attention across too many objects and left no reliable message area.</p><blockquote>“Surreal tiered cake as the single oversized organic focal form; botanical watercolor, fluorescent risograph and digital glitch collage; pink, acid green, cobalt and cream; confine misregistration to edges; reserve the upper-left quarter as message-safe space; avoid embedded text and polished vector finish.”</blockquote><p>This excerpt summarizes the structured prompt rules shown below. The revision constrains composition and materials while preserving the celebratory energy.</p></div>
+        <figure><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/01-chaotic-birthday.webp" alt="Final birthday artwork with one cake focal point and a quieter area for a personal message" width="1122" height="1402" loading="lazy" decoding="async" srcset="assets/01-chaotic-birthday-560.webp 560w, assets/01-chaotic-birthday.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button><figcaption>Final output — controlled maximalism</figcaption></figure>
+      </div>
+      <div class="drag-compare"><div><h3>Compare the refinement</h3><p>Drag the handle to reveal how the focal hierarchy changed.</p></div><div class="drag-stage" style="--split:50%"><img src="assets/before-birthday.webp" alt="Initial crowded birthday image" width="1122" height="1402" loading="lazy" decoding="async" srcset="assets/before-birthday-560.webp 560w, assets/before-birthday.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"><img class="drag-after" src="assets/01-chaotic-birthday.webp" alt="Refined birthday image with clearer focal point" width="1122" height="1402" loading="lazy" decoding="async" srcset="assets/01-chaotic-birthday-560.webp 560w, assets/01-chaotic-birthday.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"><span class="drag-divider" aria-hidden="true"></span></div><label for="comparison-range">Reveal final image</label><input id="comparison-range" type="range" min="0" max="100" value="50" aria-valuetext="50 percent final image"></div>
+      <div class="case-footer"><div><h3>JSON system</h3><p>Stable rules specify palette, materials, focal hierarchy and text-safe space. Occasion, relationship, emotion and focal subject remain variable.</p><a href="#json">Inspect the JSON framework ↗</a></div><div><h3>Variation test & outcome</h3><p>Two further Glitch Garden occasions test whether the same grammar survives a change in message. In this self-evaluated portfolio test, the final birthday composition has clearer hierarchy and usable message space; no commercial outcome is claimed.</p><a href="#variations">See controlled variations ↗</a></div></div>
     </section>
 
     <section class="marquee" aria-label="Creative disciplines"><div>ART DIRECTION ✦ JSON PROMPT SYSTEMS ✦ EMOTIONAL STORYTELLING ✦ STYLE RESEARCH ✦ BATCH-READY WORKFLOWS ✦ </div></section>
@@ -50,29 +90,32 @@
 
     <section id="cards" class="section cards-section">
       <div class="section-head reveal"><p class="kicker">02 / HeartStamp concepts</p><h2>Four feelings.<br>Zero greeting-card cringe.</h2><p>Each concept begins with the emotional job—not an aesthetic keyword. The style follows the relationship, occasion and tone.</p></div>
+      <div class="technical-panel" data-technical hidden><h3>System controls</h3><p><b>Stable:</b> palette, material rules and one focal hierarchy. <b>Variables:</b> occasion, relationship, primary and secondary emotion, focal subject. <b>Negative constraints:</b> generic stock illustration, illegible embedded text, artist imitation. <b>Evaluation:</b> message-safe space, clarity and emotional fit.</p></div>
       <div class="card-grid">
-        <article class="project-card reveal"><img src="assets/01-chaotic-birthday.png" alt="Chaotic Birthday concept" /><div class="project-copy"><span>JOY · INTENSITY 09</span><h3>Chaotic Birthday</h3><p>A joyful visual detonation: maximal enough to feel alive, controlled enough to hold a message.</p><b>Glitch Garden Letters</b></div></article>
-        <article class="project-card reveal"><img src="assets/02-tender-apology.png" alt="Awkward but Sincere Apology concept" /><div class="project-copy"><span>VULNERABILITY · INTENSITY 06</span><h3>Awkward, but Sincere</h3><p>Rigid geometry meets a fragile handmade character—the tension is the apology.</p><b>Tender Brutalism</b></div></article>
-        <article class="project-card reveal"><img src="assets/03-cosmic-friendship.png" alt="Long-distance friendship concept" /><div class="project-copy"><span>CLOSENESS · INTENSITY 07</span><h3>Same Sky, Different Wi-Fi</h3><p>Two private worlds connected through tiny shared rituals, rendered as a cosmic scrapbook.</p><b>Cosmic Scrapbook</b></div></article>
-        <article class="project-card reveal"><img src="assets/04-breakup-recovery.png" alt="Breakup recovery concept" /><div class="project-copy"><span>RECLAMATION · INTENSITY 08</span><h3>Water Yourself</h3><p>Recovery without the sad clichés: discarded red flags become birds; the cracked disco ball grows.</p><b>Neo-Bauhaus Surrealism</b></div></article>
+        <article class="project-card reveal"><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/01-chaotic-birthday.webp" alt="Chaotic Birthday concept" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/01-chaotic-birthday-560.webp 560w, assets/01-chaotic-birthday.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button><div class="project-copy"><span>JOY · INTENSITY 09</span><h3>Chaotic Birthday</h3><p>A joyful visual detonation: maximal enough to feel alive, controlled enough to hold a message.</p><b>Glitch Garden Letters</b></div></article>
+        <article class="project-card reveal"><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/02-tender-apology.webp" alt="Awkward but Sincere Apology concept" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/02-tender-apology-560.webp 560w, assets/02-tender-apology.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button><div class="project-copy"><span>VULNERABILITY · INTENSITY 06</span><h3>Awkward, but Sincere</h3><p>Rigid geometry meets a fragile handmade character—the tension is the apology.</p><b>Tender Brutalism</b></div></article>
+        <article class="project-card reveal"><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/03-cosmic-friendship.webp" alt="Long-distance friendship concept" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/03-cosmic-friendship-560.webp 560w, assets/03-cosmic-friendship.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button><div class="project-copy"><span>CLOSENESS · INTENSITY 07</span><h3>Same Sky, Different Wi-Fi</h3><p>Two private worlds connected through tiny shared rituals, rendered as a cosmic scrapbook.</p><b>Cosmic Scrapbook</b></div></article>
+        <article class="project-card reveal"><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/04-breakup-recovery.webp" alt="Breakup recovery concept" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/04-breakup-recovery-560.webp 560w, assets/04-breakup-recovery.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button><div class="project-copy"><span>RECLAMATION · INTENSITY 08</span><h3>Water Yourself</h3><p>Recovery without the sad clichés: discarded red flags become birds; the cracked disco ball grows.</p><b>Neo-Bauhaus Surrealism</b></div></article>
       </div>
     </section>
 
     <section id="styles" class="section range-section">
       <div class="section-head split reveal"><div><p class="kicker">03 / Style range</p><h2>One brief.<br>Many visual dialects.</h2></div><p>Range matters only when intent survives the style change. Every study reserves usable message space and retains a clear emotional focal point.</p></div>
+      <div class="technical-panel" data-technical hidden><h3>Style range criteria</h3><p>Each study tests whether the emotional focal point and message-safe area remain legible as materials, lighting and visual language change.</p></div>
       <div class="style-grid">
-        <figure class="style-item wide reveal"><img src="assets/05-watercolor.png" alt="Moonlit watercolor greenhouse" /><figcaption><b>Watercolor</b><span>Atmosphere through pigment, bloom and paper</span></figcaption></figure>
-        <figure class="style-item reveal"><img src="assets/06-product-photo.png" alt="Acrylic greeting card product photograph" /><figcaption><b>Product photography</b><span>Hard flash · reflective materials</span></figcaption></figure>
-        <figure class="style-item reveal"><img src="assets/07-editorial.png" alt="Editorial illustration about sending a message" /><figcaption><b>Editorial illustration</b><span>Metaphor before decoration</span></figcaption></figure>
-        <figure class="style-item reveal"><img src="assets/08-retro-cinema.png" alt="Retro cinematic diner birthday" /><figcaption><b>Retro cinema</b><span>Halation · practical neon · candid energy</span></figcaption></figure>
-        <figure class="style-item tall reveal"><img src="assets/09-cyberpunk.png" alt="Cyberpunk friendship shrine" /><figcaption><b>Cyberpunk craft</b><span>Future city, handmade heart</span></figcaption></figure>
-        <figure class="style-item reveal"><img src="assets/10-bauhaus.png" alt="Bauhaus celebration composition" /><figcaption><b>Neo-Bauhaus</b><span>Grid, rhythm and joyful geometry</span></figcaption></figure>
-        <figure class="style-item wide reveal"><img src="assets/11-anime-inspired.png" alt="Anime-inspired rooftop friendship scene" /><figcaption><b>Animation illustration</b><span>Quiet character moment · cinematic sky</span></figcaption></figure>
+        <figure class="style-item wide reveal"><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/05-watercolor.webp" alt="Moonlit watercolor greenhouse" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/05-watercolor-560.webp 560w, assets/05-watercolor.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button><figcaption><b>Watercolor</b><span>Atmosphere through pigment, bloom and paper</span></figcaption></figure>
+        <figure class="style-item reveal"><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/06-product-photo.webp" alt="Acrylic greeting card product photograph" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/06-product-photo-560.webp 560w, assets/06-product-photo.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button><figcaption><b>Product photography</b><span>Hard flash · reflective materials</span></figcaption></figure>
+        <figure class="style-item reveal"><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/07-editorial.webp" alt="Editorial illustration about sending a message" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/07-editorial-560.webp 560w, assets/07-editorial.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button><figcaption><b>Editorial illustration</b><span>Metaphor before decoration</span></figcaption></figure>
+        <figure class="style-item reveal"><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/08-retro-cinema.webp" alt="Retro cinematic diner birthday" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/08-retro-cinema-560.webp 560w, assets/08-retro-cinema.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button><figcaption><b>Retro cinema</b><span>Halation · practical neon · candid energy</span></figcaption></figure>
+        <figure class="style-item tall reveal"><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/09-cyberpunk.webp" alt="Cyberpunk friendship shrine" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/09-cyberpunk-560.webp 560w, assets/09-cyberpunk.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button><figcaption><b>Cyberpunk craft</b><span>Future city, handmade heart</span></figcaption></figure>
+        <figure class="style-item reveal"><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/10-bauhaus.webp" alt="Bauhaus celebration composition" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/10-bauhaus-560.webp 560w, assets/10-bauhaus.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button><figcaption><b>Neo-Bauhaus</b><span>Grid, rhythm and joyful geometry</span></figcaption></figure>
+        <figure class="style-item wide reveal"><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/11-anime-inspired.webp" alt="Anime-inspired rooftop friendship scene" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/11-anime-inspired-560.webp 560w, assets/11-anime-inspired.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button><figcaption><b>Animation illustration</b><span>Quiet character moment · cinematic sky</span></figcaption></figure>
       </div>
     </section>
 
     <section id="systems" class="section systems-section">
       <div class="section-head reveal"><p class="kicker">04 / Original style systems</p><h2>Not a one-off look.<br>A reusable visual grammar.</h2></div>
+      <div class="technical-panel" data-technical hidden><h3>Prompt architecture</h3><p>Stable rules live with each named style system below. Occasion, relationship and emotion are variable fields in the JSON framework. Exclusions and evaluation criteria are documented in the featured case and scorecard.</p></div>
       <div class="system-list">
         <article class="system reveal"><div class="system-number">A</div><div><h3>Glitch Garden Letters</h3><p>Botanical watercolor × fluorescent risograph × digital interference. Built for celebration, admiration and lovable chaos.</p><div class="swatches"><i style="--c:#ff4f9a"></i><i style="--c:#d7ff3f"></i><i style="--c:#192180"></i><i style="--c:#fff4dc"></i></div></div><ul><li>One oversized organic focal form</li><li>Misregistration stays at the edges</li><li>30% quiet space protects the message</li><li>No polished vector perfection</li></ul></article>
         <article class="system reveal"><div class="system-number">B</div><div><h3>Tender Brutalism</h3><p>Architectural certainty × vulnerable pencil marks. Designed for the emotions people struggle to phrase.</p><div class="swatches"><i style="--c:#b8b4ac"></i><i style="--c:#f09a7d"></i><i style="--c:#173f8f"></i><i style="--c:#d4a62a"></i></div></div><ul><li>Hard geometry holds soft characters</li><li>One repaired or imperfect object</li><li>Emotion is restrained, never cute</li><li>Paper texture keeps it human</li></ul></article>
@@ -80,33 +123,34 @@
       </div>
     </section>
 
-    <section class="section consistency-section">
+    <section id="variations" class="section consistency-section">
       <div class="section-head split reveal"><div><p class="kicker">05 / Controlled variation test</p><h2>Same DNA.<br>Different emotional jobs.</h2></div><p>Two new occasions per system test whether the visual language can travel without collapsing into a single image. Palette, material logic and composition rules remain stable; subject and emotion change.</p></div>
-      <div class="variation-system reveal"><div class="variation-label"><span>A</span><h3>Glitch Garden Letters</h3><p>Stable: watercolor blooms, fluorescent halftone, edge glitches, quiet message space.</p></div><figure><img src="assets/glitch-garden-proud.png" alt="Glitch Garden trophy variation" /><figcaption>Proud of You, Somehow</figcaption></figure><figure><img src="assets/glitch-garden-week.png" alt="Glitch Garden coffee variation" /><figcaption>You Survived the Week</figcaption></figure></div>
-      <div class="variation-system reveal"><div class="variation-label"><span>B</span><h3>Tender Brutalism</h3><p>Stable: hard sheltering geometry, soft paper characters, one repaired or imperfect object.</p></div><figure><img src="assets/tender-brutalism-support.png" alt="Tender Brutalism support variation" /><figcaption>Here on the Hard Day</figcaption></figure><figure><img src="assets/tender-brutalism-thanks.png" alt="Tender Brutalism thank-you variation" /><figcaption>Complicated Thank You</figcaption></figure></div>
-      <div class="variation-system reveal"><div class="variation-label"><span>C</span><h3>Cosmic Scrapbook</h3><p>Stable: separate worlds, one luminous connection, personal ephemera and unreadable interface fragments.</p></div><figure><img src="assets/cosmic-scrapbook-family.png" alt="Cosmic Scrapbook chosen-family variation" /><figcaption>Chosen-Family Holiday</figcaption></figure><figure><img src="assets/cosmic-scrapbook-milestone.png" alt="Cosmic Scrapbook milestone variation" /><figcaption>Late, Never Absent</figcaption></figure></div>
+      <div class="variation-system reveal"><div class="variation-label"><span>A</span><h3>Glitch Garden Letters</h3><p>Stable: watercolor blooms, fluorescent halftone, edge glitches, quiet message space.</p></div><figure><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/glitch-garden-proud.webp" alt="Glitch Garden trophy variation" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/glitch-garden-proud-560.webp 560w, assets/glitch-garden-proud.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button><figcaption>Proud of You, Somehow</figcaption></figure><figure><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/glitch-garden-week.webp" alt="Glitch Garden coffee variation" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/glitch-garden-week-560.webp 560w, assets/glitch-garden-week.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button><figcaption>You Survived the Week</figcaption></figure></div>
+      <div class="variation-system reveal"><div class="variation-label"><span>B</span><h3>Tender Brutalism</h3><p>Stable: hard sheltering geometry, soft paper characters, one repaired or imperfect object.</p></div><figure><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/tender-brutalism-support.webp" alt="Tender Brutalism support variation" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/tender-brutalism-support-560.webp 560w, assets/tender-brutalism-support.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button><figcaption>Here on the Hard Day</figcaption></figure><figure><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/tender-brutalism-thanks.webp" alt="Tender Brutalism thank-you variation" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/tender-brutalism-thanks-560.webp 560w, assets/tender-brutalism-thanks.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button><figcaption>Complicated Thank You</figcaption></figure></div>
+      <div class="variation-system reveal"><div class="variation-label"><span>C</span><h3>Cosmic Scrapbook</h3><p>Stable: separate worlds, one luminous connection, personal ephemera and unreadable interface fragments.</p></div><figure><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/cosmic-scrapbook-family.webp" alt="Cosmic Scrapbook chosen-family variation" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/cosmic-scrapbook-family-560.webp 560w, assets/cosmic-scrapbook-family.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button><figcaption>Chosen-Family Holiday</figcaption></figure><figure><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/cosmic-scrapbook-milestone.webp" alt="Cosmic Scrapbook milestone variation" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/cosmic-scrapbook-milestone-560.webp 560w, assets/cosmic-scrapbook-milestone.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button><figcaption>Late, Never Absent</figcaption></figure></div>
+      <div class="score-method"><h3>How the consistency study was scored</h3><p><strong>Self-evaluated controlled consistency study.</strong> Each variation was visually checked for palette consistency, material logic, message-safe space, emotional differentiation and focal clarity. These are portfolio judgments, not external validation or completed audience testing.</p></div>
       <div class="consistency-score reveal"><div><b>3/3</b><span>palette retained</span></div><div><b>3/3</b><span>material logic retained</span></div><div><b>6/6</b><span>message-safe compositions</span></div><div><b>6/6</b><span>distinct emotional jobs</span></div></div>
     </section>
 
     <section id="process" class="section process-section">
       <div class="section-head split reveal"><div><p class="kicker">06 / Iteration</p><h2>Better prompts begin with better diagnosis.</h2></div><p>I evaluate hierarchy, emotional accuracy, typography space, palette discipline and batch repeatability—then change one variable group at a time.</p></div>
       <div class="comparison reveal">
-        <div class="compare-image"><span>BEFORE · GENERIC & CROWDED</span><img src="assets/before-birthday.png" alt="Overcrowded generic birthday image before refinement" /></div>
+        <div class="compare-image"><span>BEFORE · GENERIC & CROWDED</span><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/before-birthday.webp" alt="Overcrowded generic birthday image before refinement" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/before-birthday-560.webp 560w, assets/before-birthday.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button></div>
         <div class="compare-arrow">→</div>
-        <div class="compare-image final"><span>AFTER · CONTROLLED MAXIMALISM</span><img src="assets/01-chaotic-birthday.png" alt="Refined chaotic birthday image" /></div>
+        <div class="compare-image final"><span>AFTER · CONTROLLED MAXIMALISM</span><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/01-chaotic-birthday.webp" alt="Refined chaotic birthday image" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/01-chaotic-birthday-560.webp 560w, assets/01-chaotic-birthday.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button></div>
         <div class="diagnosis"><h3>Case 01 — Composition repair</h3><p><b>Problem:</b> every object competed; no space remained for a message.</p><p><b>Correction:</b> one hero silhouette, constrained palette, upper-left safe zone and texture hierarchy.</p><p><b>Result:</b> still chaotic in feeling, now usable as a card system.</p></div>
       </div>
       <div class="comparison reverse reveal">
-        <div class="compare-image"><span>BEFORE · EMOTIONALLY UNCLEAR</span><img src="assets/before-apology.png" alt="Emotionally unclear apology illustration before refinement" /></div>
+        <div class="compare-image"><span>BEFORE · EMOTIONALLY UNCLEAR</span><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/before-apology.webp" alt="Emotionally unclear apology illustration before refinement" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/before-apology-560.webp 560w, assets/before-apology.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button></div>
         <div class="compare-arrow">→</div>
-        <div class="compare-image final"><span>AFTER · ONE HONEST GESTURE</span><img src="assets/02-tender-apology.png" alt="Refined apology illustration" /></div>
+        <div class="compare-image final"><span>AFTER · ONE HONEST GESTURE</span><button class="artwork-trigger" type="button" aria-label="View artwork in lightbox"><img src="assets/02-tender-apology.webp" alt="Refined apology illustration" width="1122" height="1402" decoding="async" loading="lazy" srcset="assets/02-tender-apology-560.webp 560w, assets/02-tender-apology.webp 1122w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"></button></div>
         <div class="diagnosis"><h3>Case 02 — Emotional focus</h3><p><b>Problem:</b> familiar apology symbols produced visual noise, not sincerity.</p><p><b>Correction:</b> replace the symbol pile with one hesitant character and one repaired object.</p><p><b>Result:</b> the image communicates vulnerability before any copy is added.</p></div>
       </div>
     </section>
 
-    <section class="section json-section">
+    <section id="json" class="section json-section">
       <div class="section-head split reveal"><div><p class="kicker">07 / Structured prompting</p><h2>Creative direction,<br>stored as data.</h2></div><p>The schema separates stable style DNA from variable occasion, relationship and emotion fields—making controlled batch generation possible.</p></div>
-      <div class="code-wrap reveal"><div class="code-top"><span>heartstamp_style_prompt.json</span><button id="copy-json" type="button">Copy JSON</button></div><pre><code id="json-code">{
+      <div class="code-wrap reveal"><div class="code-top"><span>heartstamp_style_prompt.json</span><button id="copy-json" type="button" aria-label="Copy prompt JSON to clipboard">Copy JSON</button></div><pre><code id="json-code">{
   "occasion": "chaotic_birthday",
   "relationship": "close_friend",
   "emotion": {
@@ -148,14 +192,18 @@
     </section>
 
     <section id="contact" class="contact section">
-      <p class="eyebrow">Available for a practical creative test</p>
-      <h2>Let’s make cards<br>people actually mean.</h2>
-      <p>Prolay Kumar Panda · GenAI prompt engineering + production systems</p>
-      <a href="mailto:careers@heartstamp.com?subject=GenAI%20Prompt%20Engineer%20—%20Prolay%20Panda">Open application email ↗</a>
+      <p class="eyebrow">Open to GenAI visual systems conversations</p>
+      <h2>Let’s make images<br>people actually mean.</h2>
+      <p>Prolay Kumar Panda · GenAI Prompt Engineer &amp; Visual Systems Designer</p>
+      <div class="contact-actions"><a href="downloads/portfolio.pdf" download>Download PDF</a><span>View Resume <small>TODO: add résumé URL</small></span><span>LinkedIn <small>TODO: add profile URL</small></span><span>Email Prolay <small>TODO: add email address</small></span><button id="copy-email" type="button" disabled aria-label="Copy email, unavailable until an email address is added">Copy email <small>TODO: add email address</small></button></div>
+      <p id="contact-details" class="contact-todo">Contact TODO: add Prolay’s verified email, LinkedIn URL and résumé URL or file before sharing this page.</p>
+      <a class="secondary-contact" href="mailto:careers@heartstamp.com?subject=GenAI%20Prompt%20Engineer%20—%20Prolay%20Panda">Optional: open HeartStamp application email ↗</a>
       <small>Tools represented honestly: ChatGPT / OpenAI Images. Other image models are not claimed as hands-on experience.</small>
     </section>
   </main>
-  <footer><span>© 2026 Prolay Kumar Panda</span><span>Designed as a focused HeartStamp application portfolio.</span></footer>
+  <button id="back-to-top" class="back-to-top" type="button">Back to top ↑</button>
+  <dialog id="artwork-dialog" aria-labelledby="dialog-title"><div class="dialog-layout"><div class="dialog-image"><img id="dialog-art" src="assets/01-chaotic-birthday.webp" alt="" width="1122" height="1402"></div><div class="dialog-copy"><button id="dialog-close" class="dialog-close" type="button" aria-label="Close artwork viewer">Close ×</button><p id="dialog-count" class="kicker"></p><h2 id="dialog-title"></h2><dl><dt>Style system</dt><dd id="dialog-style"></dd><dt>Emotional objective</dt><dd id="dialog-emotion"></dd><dt>Prompt excerpt</dt><dd id="dialog-prompt"></dd><dt>Model disclosure</dt><dd>Created with ChatGPT / OpenAI Images</dd></dl><div class="dialog-nav"><button id="dialog-prev" type="button">← Previous</button><button id="dialog-next" type="button">Next →</button></div></div></div></dialog>
+  <footer><span>© 2026 Prolay Kumar Panda</span><span>Self-directed GenAI visual systems portfolio.</span></footer>
   <script src="script.js"></script>
 </body>
 </html>
