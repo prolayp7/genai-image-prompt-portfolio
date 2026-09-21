@@ -1,0 +1,342 @@
+{
+  "schema": {
+    "schema_version": "1.0.0",
+    "description": "Reusable style definitions and composition contract; provider-neutral example, not a vendor API payload.",
+    "style_systems": [
+      {
+        "id": "glitch-garden",
+        "name": "Glitch Garden Letters",
+        "version": "1.0.0",
+        "palette": [
+          "#FF4F9A",
+          "#D7FF3F",
+          "#192180",
+          "#FFF4DC"
+        ],
+        "materials": [
+          "botanical watercolor",
+          "fluorescent risograph",
+          "digital glitch collage"
+        ],
+        "rules": [
+          "one oversized organic focal form",
+          "misregistration limited to edges",
+          "imperfect texture; no polished vector finish"
+        ]
+      },
+      {
+        "id": "tender-brutalism",
+        "name": "Tender Brutalism",
+        "version": "1.0.0",
+        "palette": [
+          "#B8B4AC",
+          "#F09A7D",
+          "#173F8F",
+          "#D4A62A"
+        ],
+        "materials": [
+          "brutalist geometry",
+          "vulnerable pencil marks",
+          "diary ephemera"
+        ],
+        "rules": [
+          "hard geometry holds soft characters",
+          "one repaired or imperfect object",
+          "restrained emotion, never cute",
+          "visible paper texture"
+        ]
+      },
+      {
+        "id": "cosmic-scrapbook",
+        "name": "Cosmic Scrapbook",
+        "version": "1.0.0",
+        "palette": [
+          "#182A75",
+          "#C5C8D7",
+          "#B9A7DC",
+          "#FF6B35"
+        ],
+        "materials": [
+          "analog ephemera",
+          "Y2K fragments",
+          "torn paper"
+        ],
+        "rules": [
+          "two worlds joined by one visual thread",
+          "personal objects replace generic icons",
+          "torn-paper depth",
+          "interface fragments stay unreadable"
+        ]
+      }
+    ],
+    "variable_contract": {
+      "required": [
+        "occasion",
+        "relationship",
+        "emotion",
+        "style_system",
+        "composition"
+      ],
+      "intensity": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 10
+      },
+      "aspect_ratio": [
+        "4:5",
+        "1:1",
+        "9:16",
+        "16:9"
+      ],
+      "message_safe_area": {
+        "positions": [
+          "upper-left",
+          "upper-right",
+          "lower-left",
+          "lower-right"
+        ],
+        "minimum_percent": 30
+      }
+    }
+  },
+  "request": {
+    "prompt_version": "1.0.0",
+    "occasion": "birthday",
+    "relationship": "close_friend",
+    "emotion": {
+      "primary": "joy",
+      "secondary": "playful_chaos",
+      "intensity": 9
+    },
+    "style_system": {
+      "id": "glitch-garden",
+      "name": "Glitch Garden Letters",
+      "version": "1.0.0",
+      "palette": [
+        "#FF4F9A",
+        "#D7FF3F",
+        "#192180",
+        "#FFF4DC"
+      ],
+      "materials": [
+        "botanical watercolor",
+        "fluorescent risograph",
+        "digital glitch collage"
+      ],
+      "rules": [
+        "one oversized organic focal form",
+        "misregistration limited to edges",
+        "imperfect texture; no polished vector finish",
+        "minimum 30 percent message-safe space"
+      ]
+    },
+    "composition": {
+      "aspect_ratio": "4:5",
+      "message_safe_area": {
+        "position": "upper-left",
+        "minimum_percent": 30
+      }
+    },
+    "avoid": [
+      "generic stock illustration",
+      "embedded readable text",
+      "artist imitation"
+    ],
+    "generation": {
+      "status": "not_submitted",
+      "model": null
+    }
+  },
+  "batch": {
+    "manifest_version": "1.0.0",
+    "batch_id": "example-three-style-study",
+    "status": "draft_not_submitted",
+    "description": "Same selected brief across all three styles for controlled comparison.",
+    "requests": [
+      {
+        "request_id": "example-1",
+        "prompt_version": "1.0.0",
+        "occasion": "birthday",
+        "relationship": "close_friend",
+        "emotion": {
+          "primary": "joy",
+          "secondary": "playful_chaos",
+          "intensity": 9
+        },
+        "style_system": {
+          "id": "glitch-garden",
+          "name": "Glitch Garden Letters",
+          "version": "1.0.0",
+          "palette": [
+            "#FF4F9A",
+            "#D7FF3F",
+            "#192180",
+            "#FFF4DC"
+          ],
+          "materials": [
+            "botanical watercolor",
+            "fluorescent risograph",
+            "digital glitch collage"
+          ],
+          "rules": [
+            "one oversized organic focal form",
+            "misregistration limited to edges",
+            "imperfect texture; no polished vector finish",
+            "minimum 30 percent message-safe space"
+          ]
+        },
+        "composition": {
+          "aspect_ratio": "4:5",
+          "message_safe_area": {
+            "position": "upper-left",
+            "minimum_percent": 30
+          }
+        },
+        "avoid": [
+          "generic stock illustration",
+          "embedded readable text",
+          "artist imitation"
+        ],
+        "generation": {
+          "status": "not_submitted",
+          "model": null
+        }
+      },
+      {
+        "request_id": "example-2",
+        "prompt_version": "1.0.0",
+        "occasion": "birthday",
+        "relationship": "close_friend",
+        "emotion": {
+          "primary": "joy",
+          "secondary": "playful_chaos",
+          "intensity": 9
+        },
+        "style_system": {
+          "id": "tender-brutalism",
+          "name": "Tender Brutalism",
+          "version": "1.0.0",
+          "palette": [
+            "#B8B4AC",
+            "#F09A7D",
+            "#173F8F",
+            "#D4A62A"
+          ],
+          "materials": [
+            "brutalist geometry",
+            "vulnerable pencil marks",
+            "diary ephemera"
+          ],
+          "rules": [
+            "hard geometry holds soft characters",
+            "one repaired or imperfect object",
+            "restrained emotion, never cute",
+            "visible paper texture",
+            "minimum 30 percent message-safe space"
+          ]
+        },
+        "composition": {
+          "aspect_ratio": "4:5",
+          "message_safe_area": {
+            "position": "upper-left",
+            "minimum_percent": 30
+          }
+        },
+        "avoid": [
+          "generic stock illustration",
+          "embedded readable text",
+          "artist imitation"
+        ],
+        "generation": {
+          "status": "not_submitted",
+          "model": null
+        }
+      },
+      {
+        "request_id": "example-3",
+        "prompt_version": "1.0.0",
+        "occasion": "birthday",
+        "relationship": "close_friend",
+        "emotion": {
+          "primary": "joy",
+          "secondary": "playful_chaos",
+          "intensity": 9
+        },
+        "style_system": {
+          "id": "cosmic-scrapbook",
+          "name": "Cosmic Scrapbook",
+          "version": "1.0.0",
+          "palette": [
+            "#182A75",
+            "#C5C8D7",
+            "#B9A7DC",
+            "#FF6B35"
+          ],
+          "materials": [
+            "analog ephemera",
+            "Y2K fragments",
+            "torn paper"
+          ],
+          "rules": [
+            "two worlds joined by one visual thread",
+            "personal objects replace generic icons",
+            "torn-paper depth",
+            "interface fragments stay unreadable",
+            "minimum 30 percent message-safe space"
+          ]
+        },
+        "composition": {
+          "aspect_ratio": "4:5",
+          "message_safe_area": {
+            "position": "upper-left",
+            "minimum_percent": 30
+          }
+        },
+        "avoid": [
+          "generic stock illustration",
+          "embedded readable text",
+          "artist imitation"
+        ],
+        "generation": {
+          "status": "not_submitted",
+          "model": null
+        }
+      }
+    ],
+    "evaluation_plan": {
+      "scale": "1–5 reviewer rubric",
+      "criteria": [
+        "emotional fit",
+        "focal clarity",
+        "palette consistency",
+        "material logic",
+        "message-safe space"
+      ],
+      "approval": "human review required",
+      "on_failure": "revise one variable group and regenerate"
+    }
+  },
+  "asset_metadata": {
+    "example_only": true,
+    "asset_id": "sample-glitch-birthday-001",
+    "style_version": "1.0.0",
+    "prompt_version": "1.0.0",
+    "model": "TODO: verified exact model identifier",
+    "generation_status": "illustrative_approved",
+    "evaluation": {
+      "method": "illustrative reviewer rubric, not measured results",
+      "scale": {
+        "min": 1,
+        "max": 5
+      },
+      "scores": {
+        "emotional_fit": 4,
+        "focal_clarity": 4,
+        "palette_consistency": 5,
+        "material_logic": 4,
+        "message_safe_space": 4
+      }
+    },
+    "storage_uri": null
+  }
+}

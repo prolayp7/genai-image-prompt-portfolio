@@ -45,3 +45,22 @@ The visual work in this portfolio was generated using ChatGPT / OpenAI Images. N
 ## Usage note
 
 This portfolio and its artwork were created specifically for Prolay Kumar Panda's professional application.
+
+## Browser validation and current-site PDF
+
+The production site remains dependency-free. For development checks, provide an existing
+`playwright-core` installation via `PLAYWRIGHT_MODULE` (module name or absolute path).
+Set `CHROME_PATH` if Chrome is not at `/opt/google/chrome/chrome`.
+
+```sh
+python3 -m http.server 8765 --bind 127.0.0.1 --directory dist
+# In another terminal, with playwright-core available:
+node scripts/browser-check.cjs
+python3 create_portfolio_pdf.py
+```
+
+The browser check exercises five widths and key interactions, and refreshes
+`dist/downloads/prompt-examples.json`. The PDF exporter reads the current website,
+uses its print stylesheet, includes all three JSON panels and compresses artwork
+for the downloadable `dist/downloads/portfolio.pdf`. It does not call an image API.
+`PORTFOLIO_URL` can override the exporter's default local URL.

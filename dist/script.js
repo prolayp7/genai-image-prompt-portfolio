@@ -18,7 +18,6 @@ async function copyText(value, success) {
   try { await navigator.clipboard.writeText(value); showToast(success); }
   catch { showToast('Clipboard unavailable. Select and copy the text manually.'); }
 }
-document.getElementById('copy-json').addEventListener('click', () => copyText(document.getElementById('json-code').textContent, 'JSON copied to clipboard.'));
 document.getElementById('copy-email').addEventListener('click', () => copyText('connect.prolay@gmail.com', 'Email copied to clipboard.'));
 
 const menuButton = document.querySelector('.menu-toggle');
@@ -35,9 +34,10 @@ nav.addEventListener('click', (event) => {
 const reviewButton = document.getElementById('review-toggle');
 reviewButton.addEventListener('click', () => {
   const active = document.body.classList.toggle('quick-review');
-  reviewButton.textContent = active ? 'Full Portfolio' : 'Quick Review';
+  reviewButton.textContent = active ? 'Full Portfolio' : '3-Minute Review';
   reviewButton.setAttribute('aria-pressed', String(active));
-  if (active && location.hash && getComputedStyle(document.querySelector(location.hash))?.display === 'none') location.hash = '#top';
+  const target = document.getElementById(location.hash.slice(1));
+  if (active && target && !target.getClientRects().length) location.hash = '#top';
 });
 const creativeButton = document.getElementById('creative-view');
 const technicalButton = document.getElementById('technical-view');
@@ -118,3 +118,5 @@ compareRange.addEventListener('input', () => {
   document.querySelector('.drag-stage').style.setProperty('--split', `${compareRange.value}%`);
   compareRange.setAttribute('aria-valuetext', `${compareRange.value} percent final image`);
 });
+
+nav.addEventListener('keydown', event => { if (event.key === 'Escape') { nav.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); menuButton.focus(); } });

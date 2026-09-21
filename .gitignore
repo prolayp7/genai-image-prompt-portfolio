@@ -23,3 +23,8 @@ venv/
 *.swo
 .DS_Store
 Thumbs.db
+
+# Keep production audit, change history and source provenance reviewable.
+!AUDIT.md
+!CHANGELOG.md
+!RESEARCH_AND_VALIDATION.md
